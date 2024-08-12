@@ -4,71 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ericcs Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
     <header>
-        <div class="logo"><span>Ericcs Academy</span></div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <a href="index.html">
+                    <span class="fa-solid fa-chart-line" aria-hidden="true"></span>
+                    <span>Ericcs Academy</span>
+                  </a>
+                </h1>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="button">Login</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="intro">
-            <h1>Welcome to Ericcs Academy</h1>
-            <p>Hi, welcome to <span>Ericcs Academy.</span></p>
+            <p class="name">Hi, welcome to <span>Ericcs Academy.</span></p>
             <h2>Simple Entry. Simple Exit. Simple Profits</h2>
             <p>We Guide You From £0 To £3000+/Month. Here You'll Learn How To Trade, Be Profitable & Get Monthly Payouts Consistently.</p>
         </section>
+        <div class="gradient"></div>
+        <div class="section-blue">
         <section id="services">
             <h2>Our Services</h2>
             <p>Details about the services offered.</p>
-            <article>
+            <div class="services-container">
+            <article class="course">
                 <h3>A-Z Trading Course</h3>
-                <p>The course comprehensively delves into Ericcs's strategy, breaking it down into easily digestible bits from start to finish..</p>
+                <p class="blackbox">The course comprehensively delves into Ericcs's strategy, breaking it down into easily digestible bits from start to finish..</p>
             </article>
-            <article>
+            <article class="template">
                 <h3>Trading Journal Template</h3>
-                <p>Get lifetime access to Ericcs's backtesting template. Record your backtests and live trades. Get monthly reports & more</p> 
+                <p class="blackbox">Get lifetime access to Ericcs's backtesting template. Record your backtests and live trades. Get monthly reports & more</p> 
             </article>
-            <article>
+            <article class="chat">
                 <h3>Exclusive Trading Chat Room</h3>
-                <p>Get access to Ericcs's mentorship group to network with like-minded traders with the same goals as you.</p> 
+                <p class="blackbox">Get access to Ericcs's mentorship group to network with like-minded traders with the same goals as you.</p> 
             </article>
-            <article>
+            <article class="feedback">
                 <h3>Personalised Trade Feedback</h3>
-                <p>Gain access to Ericcs's exclusive questions channel where every question will not go unanswered.</p>
+                <p class="blackbox">Gain access to Ericcs's exclusive questions channel where every question will not go unanswered.</p>
             </article>
+            <article class="livetrading">
+                <h3>Live Trade Ideas</h3>
+                <p class="blackbox">Gain access to Sully's live trade Ideas, complete with entry, stop-loss and take profit levels.</p>
+            </article>
+            <article class="prizes">
+                <h3>Monthly Prizes</h3>
+                <p class="blackbox">Gain access to a reward system where individuals receive prizes such as: 1-on-1 sessions, free mentorship access & more!</p>
+            </article>
+            </div>
         </section>
+        </div>
+        <div class="gradient"></div>
         <section id="testimonials">
             <h2>Testimonials</h2>
             <p>What our students say about us.</p>
         </section>
+        <div class="gradient"></div>
+        <div class="section-plum">
         <section id="contact">
             <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+            <p>We are always interested in hearing about  your interesting trading journey or ideas.</p>
+            <p><a href="mailto:ericmaina@gmail.com" class="button">Email me</a></p>
         </section>
+        </div>
     </main>
+    <div class="gradient"></div>
     <footer>
         <p>Follow us on:</p>
         <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li>
+                <a href="#">
+                <span class="fa-brands fa-facebook" aria-hidden="true"></span>
+                <span class="sr-only">Facebook</span></a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-brands fa-square-x-twitter" aria-hidden="true"></span>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </li>
+            <li><a href="https://www.instagram.com/wixqeee/" target="blank">
+                <span class="fa-brands fa-instagram"></span>
+                <span class="sr-only">Instagram</span>
+            </a></li>
         </ul>
+        <p><small>&copy; 2024 Ericcs Academy. All rights reserved.</small></p>
     </footer>
 </body>
 </html>
