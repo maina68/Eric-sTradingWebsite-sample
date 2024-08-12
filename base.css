@@ -121,54 +121,51 @@
   
   /* navigation */
   
-  nav {
-    font-family: var(--mono);
-    font-size: 80%;
-    padding: 4rem 1rem;
-  }
-  
-  nav h1 a {
-    font-family: var(--sans);
-  }
-  
-  nav ul {
+  .nav-container {
+    display: flex;
+    justify-content: space-between; /* Space between h1 and ul */
+    align-items: center; /* Center items vertically */
+    padding:  4rem 1rem; /* Padding around the nav container */
+    font-family: var(--mono); /* Font for the nav bar */
+}
+
+/* h1 styles */
+.nav-container h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.nav-container h1 a {
+    color: white; /* Text color for the logo */
+    text-decoration: none; /* Remove underline from the logo */
+    font-size: 1.5rem; /* Font size for the logo */
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style: none; /* Remove default list styling */
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  nav li:first-child {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  
-  nav [class*="fa-"] {
-    font-size: 150%;
-    color: var(--aqua);
-  }
-  
-  nav h1 [class*="fa-"] {
-    font-size: 100%;
-    color: var(--aqua);
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  
-  nav a:hover,
-  nav [class*="fa-"]:hover {
-    color: var(--magenta);
-  }
-  
-  .button {
+    display: flex; /* Display list items in a row */
+}
+.nav-container h1 a:hover {
+  color: magenta;
+}
+
+nav ul li {
+    margin: 0 1rem; /* Space between nav items */
+}
+
+nav ul li a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Font size for links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav  ul li a:hover {
+    color: var(--magenta); /* Change color on hover */
+}
+ .button {
     background-color: var(--magenta);
     color: white;
     padding: 0.5rem;
